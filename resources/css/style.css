@@ -1,2 +1,240 @@
 /**Tortoiseshell Optics website code **/
 /** Copyright Martin Blonk **/
+
+/** Generic **/
+
+html {
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+/** Header **/
+header {
+  background: url(../images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+  padding-top: 1rem;
+}
+
+nav {
+  background-color: cadetblue;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0px;
+  margin: auto;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+ul li {
+  display: inline;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+header .flex {
+  justify-content: flex-end;
+}
+
+.banner {
+  background-color: white;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  line-height: 2.4rem;
+}
+
+.banner h1 {
+  padding: 1.5rem 5rem;
+}
+
+/** Services section **/
+.services {
+  display: flex;
+  justify-content: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  width: 5rem;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin: 3rem;
+}
+
+.service img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.service img.paper-icon {
+  width: 3.5rem;
+}
+
+/** Supporting Info section **/
+.supporting-info {
+  justify-content: space-around;
+}
+
+.info {
+  width: 35%;
+  margin-bottom: 4rem;
+}
+.info-title {
+  background-color: cadetblue;
+  font-weight: bold;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  max-width: 10rem;
+  font-size: 1rem;
+}
+
+.info p {
+  padding: 1rem 0;
+}
+
+/** Footer section **/
+footer {
+  background-color: azure;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+/** 1024px (tablet) media queries **/
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
+  
+  header {
+    height: 22rem;
+    padding-top: 0;
+  }
+  
+  .banner {
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+  
+  .banner h1 {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+}
+
+/** 560px (mobile) media queries **/
+@media only screen and (max-width: 560px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+  .menu {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: inline;
+  }
+  
+  header .flex {
+    justify-content: center;
+  }
+  
+  .banner {
+    margin-top: 9rem;
+    text-align: center;
+    margin-right: 0;
+    width: 100%;
+  }
+  
+  .banner h1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .services {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  .service {
+    margin: 0.77rem;
+    height: auto;
+  }
+  
+  .service-text {
+    font-size: 0.77rem;
+  }
+  
+  .supporting-info {
+    flex-direction: column;
+    align-items: center;
+    /** text-align: center; **/
+    justify-content: flex-start;
+  }
+  
+  .info {
+    width: 100%;
+  }
+  
+  .info-title {
+    max-width: 100%;
+  }
+  
+  .info p {
+    font-size: 0.77rem;
+  }
+  
+  footer img {
+    margin: auto;
+  }
+  footer div {
+    display: none;
+  }
+}
